@@ -9,4 +9,5 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["python", "-m", "httpbin"]
+CMD ["gunicorn", "-b", "0.0.0.0:80", "httpbin:app"]
+
