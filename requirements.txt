@@ -1,1 +1,3 @@
 httpbin
+flask==1.1.4
+werkzeug==1.0.1
