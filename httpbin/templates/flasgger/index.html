@@ -8,39 +8,32 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url("/static/cloudfarebg.jpg") no-repeat center center fixed;
+      background-image: url("/static/cloudfarebg.jpg");
       background-size: cover;
-      color: #222;
+      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      text-align: center;
+      color: #222;
     }
     .container {
-      max-width: 700px;
-      padding: 2rem;
       background: white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      padding: 2rem;
       border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      max-width: 800px;
     }
     h1 {
       color: #f38020;
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       gap: 10px;
     }
     h1 img {
-      width: 40px;
-      height: 40px;
-      vertical-align: middle;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+      height: 30px;
     }
     .links a {
       display: inline-block;
@@ -58,18 +51,18 @@
       color: white;
     }
     .footer {
-      margin-top: 2rem;
       font-size: 0.9rem;
-      color: #333;
+      margin-top: 1.5rem;
+    }
+    .footer a {
+      color: #2e5cc8;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>
-      Nikhil Racherla
-      <img src="/static/cloudflareicon.png" alt="Cloudflare Logo">
-    </h1>
+    <h1>Nikhil Racherla <img src="/static/cloudflareicon.png" alt="Cloudflare Logo"></h1>
     <p>This website was created for my Cloudflare Associate Solutions Engineer application.</p>
 
     <div class="links">
@@ -80,9 +73,9 @@
     </div>
 
     <div class="footer">
-      +1 (540) 630-2700 | nikhil.p.racherla@gmail.com | Blacksburg, VA, USA <br>
-      GitHub: <a href="https://github.com/Nick-Rage" target="_blank">Nick-Rage</a> |
-      LinkedIn: <a href="https://linkedin.com/in/nikhil-racherla" target="_blank">nikhil-racherla</a> <br>
+      +1 (540) 630-2700 | nikhil.p.racherla@gmail.com | Blacksburg, VA, USA<br>
+      GitHub: <a href="https://github.com/Nick-Rage">Nick-Rage</a> |
+      LinkedIn: <a href="https://linkedin.com/in/nikhil-racherla">nikhil-racherla</a><br>
       US Citizen. No sponsorship required
     </div>
   </div>
