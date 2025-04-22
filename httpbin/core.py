@@ -239,7 +239,7 @@ def set_cors_headers(response):
 
 @app.route("/")
 def homepage():
-    return render_template("index.html")
+    return render_template("flasgger/index.html")
 
 
 @app.route("/html")
