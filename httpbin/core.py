@@ -240,6 +240,19 @@ def set_cors_headers(response):
 @app.route("/")
 def homepage():
     return render_template("flasgger/index.html")
+    
+@app.route("/education")
+def education_page():
+    return render_template("flasgger/education.html")
+
+@app.route("/experience")
+def experience_page():
+    return render_template("flasgger/experience.html")
+
+@app.route("/projects")
+def projects_page():
+    return render_template("flasgger/projects.html")
+
 
 
 @app.route("/html")
