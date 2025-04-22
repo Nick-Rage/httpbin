@@ -249,9 +249,11 @@ def education_page():
 def experience_page():
     return render_template("flasgger/experience.html")
 
+@app.route("/project")
 @app.route("/projects")
-def projects_page():
+def view_projects():
     return render_template("flasgger/projects.html")
+
 
 
 
