@@ -8,7 +8,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
+      background: url("/static/orange-bg.png") no-repeat center center fixed;
+      background-size: cover;
       color: #222;
       display: flex;
       justify-content: center;
@@ -17,16 +18,22 @@
       text-align: center;
     }
     .container {
-      max-width: 700px;
+      max-width: 750px;
       padding: 2rem;
       background: white;
       box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      border-radius: 10px;
+      border-radius: 12px;
     }
     h1 {
       color: #f38020;
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    h1 img {
+      height: 40px;
     }
     p {
       font-size: 1.1rem;
@@ -34,7 +41,7 @@
     }
     .links a {
       display: inline-block;
-      margin: 0.5rem 0.6rem;
+      margin: 0.5rem 1rem;
       padding: 0.6rem 1.2rem;
       border: 2px solid #f38020;
       border-radius: 8px;
@@ -50,26 +57,36 @@
     .footer {
       margin-top: 2rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #444;
+    }
+    .footer a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Nikhil Racherla</h1>
+    <h1>
+      Nikhil Racherla
+      <img src="/static/cloudflare-logo.png" alt="Cloudflare Logo" />
+    </h1>
     <p>This website was created for my Cloudflare Associate Solutions Engineer application.</p>
 
     <div class="links">
       <a href="/education">Education</a>
       <a href="/experience">Experience</a>
-      <a href="/projects">Projects</a>
-      <a href="/project">Cloudflare Project</a>
+      <a href="/project">Projects</a>
+      <a href="/cloudflare">Cloudflare Project</a>
     </div>
 
     <div class="footer">
-      +1 (540) 630-2700 | nikhil.p.racherla@gmail.com | Blacksburg, VA, USA <br />
+      +1 (540) 630-2700 | nikhil.p.racherla@gmail.com | Blacksburg, VA, USA <br>
       GitHub: <a href="https://github.com/Nick-Rage" target="_blank">Nick-Rage</a> | 
-      LinkedIn: <a href="https://linkedin.com/in/nikhil-racherla" target="_blank">nikhil-racherla</a> <br />
+      LinkedIn: <a href="https://linkedin.com/in/nikhil-racherla" target="_blank">nikhil-racherla</a><br>
       US Citizen, No sponsorship required
     </div>
   </div>
