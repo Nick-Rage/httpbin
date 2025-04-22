@@ -237,9 +237,8 @@ def set_cors_headers(response):
 # ------
 
 
-@app.route("/legacy")
-def view_landing_page():
-    """Generates Landing Page in legacy layout."""
+@app.route("/")
+def homepage():
     return render_template("index.html")
 
 
