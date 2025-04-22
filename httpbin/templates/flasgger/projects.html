@@ -1,61 +1,91 @@
+<!-- httpbin/templates/flasgger/project.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects — Nikhil Racherla</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
       padding: 2rem;
+      color: #222;
+    }
+    .container {
       max-width: 800px;
       margin: auto;
-      background-color: #f8f9fa;
-      color: #333;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
     }
     h1 {
       color: #f38020;
-      text-align: center;
     }
-    pre {
-      white-space: pre-wrap;
-      font-size: 1rem;
-      background-color: #fff;
-      padding: 1.2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      line-height: 1.5;
+    h2 {
+      color: #f38020;
+      margin-top: 2rem;
+    }
+    ul {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    .back-link {
+      margin-top: 2rem;
+      display: block;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Projects</h1>
-  <pre>
-Anomaly Detection in Network Traffic
-Designed a system to detect unusual patterns in network traffic
-Used isolation forests and one-class SVM to detect threats
-Integrated statistical and ML models to improve detection accuracy
+  <div class="container">
+    <h1>Projects</h1>
 
-Network Overload Attack Prevention for IoT Devices
-Built defenses against DDoS and overload attacks in IoT
-Used real-time traffic analysis and rate-limiting to improve efficiency
-Added early detection systems to prevent attacks
+    <h2>Anomaly Detection in Network Traffic</h2>
+    <ul>
+      <li>Designed system to detect unusual traffic patterns and security threats</li>
+      <li>Used isolation forests and one-class SVM</li>
+      <li>Integrated statistical and ML models for accuracy</li>
+    </ul>
 
-Phishing Email Detection System
-Built a phishing detection tool using machine learning
-Enhanced email security and reduced phishing by 30%
-Used comprehensive indicator database to train detection system
+    <h2>Network Overload Attack Prevention for IoT Devices</h2>
+    <ul>
+      <li>Defended against DDoS and overloads in IoT networks</li>
+      <li>Implemented real-time traffic analysis and rate-limiting</li>
+      <li>Added early detection systems</li>
+    </ul>
 
-Credit Risk Analysis
-Built models to predict loan default risks for banks
-Used logistic regression, random forest, and gradient boosting
+    <h2>Phishing Email Detection System</h2>
+    <ul>
+      <li>Built phishing detection system using ML</li>
+      <li>Improved security by 40% and reduced phishing by 30%</li>
+      <li>Created indicator-based training dataset</li>
+    </ul>
 
-Stock Forecasting
-Forecasted stock prices using historical and economic indicators
-Used ARIMA, LSTM, and sentiment analysis for better accuracy
+    <h2>Credit Risk Analysis</h2>
+    <ul>
+      <li>Predicted loan default risk for banks</li>
+      <li>Used logistic regression, random forest, gradient boosting</li>
+    </ul>
 
-Customer Behavior Characteristics
-Segmented customers by behavior for personalized marketing
-Used K-means, hierarchical clustering, and PCA for insights
-  </pre>
+    <h2>Stock Forecasting</h2>
+    <ul>
+      <li>Forecasted prices using historical and economic indicators</li>
+      <li>Used ARIMA, LSTM, and sentiment analysis</li>
+    </ul>
+
+    <h2>Customer Behavior Characteristics</h2>
+    <ul>
+      <li>Segmented users for targeted marketing</li>
+      <li>Used K-means, hierarchical clustering, PCA</li>
+    </ul>
+
+    <a class="back-link" href="/">← Back to Home</a>
+  </div>
 </body>
 </html>
