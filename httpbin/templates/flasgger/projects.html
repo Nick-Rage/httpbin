@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects - Nikhil Racherla</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <title>Projects — Nikhil Racherla</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1 {
+      color: #f38020;
+      text-align: center;
+    }
+    pre {
+      white-space: pre-wrap;
+      font-size: 1rem;
+      background-color: #fff;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Projects</h1>
-    <ul>
-      <li><strong>Anomaly Detection in Network Traffic</strong> – Isolation Forests, SVM, enhanced detection</li>
-      <li><strong>Network Overload Attack Prevention for IoT</strong> – DDoS mitigation, real-time analysis</li>
-      <li><strong>Phishing Email Detection System</strong> – ML for phishing, 30–40% reduction in threats</li>
-      <li><strong>Credit Risk Analysis</strong> – Logistic regression, boosting, ensemble models</li>
-      <li><strong>Stock Forecasting</strong> – ARIMA, LSTM, sentiment indicators</li>
-    </ul>
-    <a href="/">← Back to Home</a>
-  </div>
+  <h1>Projects</h1>
+  <pre>
+Anomaly Detection in Network Traffic
+Designed a system to detect unusual patterns in network traffic
+Used isolation forests and one-class SVM to detect threats
+Integrated statistical and ML models to improve detection accuracy
+
+Network Overload Attack Prevention for IoT Devices
+Built defenses against DDoS and overload attacks in IoT
+Used real-time traffic analysis and rate-limiting to improve efficiency
+Added early detection systems to prevent attacks
+
+Phishing Email Detection System
+Built a phishing detection tool using machine learning
+Enhanced email security and reduced phishing by 30%
+Used comprehensive indicator database to train detection system
+
+Credit Risk Analysis
+Built models to predict loan default risks for banks
+Used logistic regression, random forest, and gradient boosting
+
+Stock Forecasting
+Forecasted stock prices using historical and economic indicators
+Used ARIMA, LSTM, and sentiment analysis for better accuracy
+
+Customer Behavior Characteristics
+Segmented customers by behavior for personalized marketing
+Used K-means, hierarchical clustering, and PCA for insights
+  </pre>
 </body>
 </html>
