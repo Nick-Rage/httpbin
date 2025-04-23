@@ -2,81 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Experience — Nikhil Racherla</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <title>Experience - Nikhil Racherla</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+      background-image: url('/static/cf.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #f38020;
+      margin-bottom: 2rem;
+    }
+    .entry {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .entry img {
+      height: 30px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .back-logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .back-logo img {
+      height: 40px;
+    }
+  </style>
 </head>
 <body>
-  <a href="/" style="position: absolute; top: 20px; left: 20px;">
-    <img src="/static/cloudflareicon.png" alt="Cloudflare Logo" width="40">
-  </a>
+  <a href="/" class="back-logo"><img src="/static/cloudflareicon.png" alt="Home"></a>
   <div class="container">
-    <h1 style="text-align: center;">Experience</h1>
+    <h1>Experience</h1>
 
     <div class="entry">
-      <img src="/static/VT.png" alt="VT" class="logo">
-      <h2>Graduate Teaching Assistant & Graduate Tutor</h2>
-      <p><strong>Virginia Tech</strong><br>10/2024 | Blacksburg, VA</p>
-      <ul>
-        <li>Teaching Assistant, ECE 5585 - Information Technology Security and Trust</li>
-        <li>Tutored 4 undergraduate-level courses (Network Security and Statistics)</li>
-      </ul>
+      <p><img src="/static/VT.png"><strong>Graduate Teaching Assistant & Graduate Tutor</strong><br>
+      Virginia Tech<br>
+      10/2024 Blacksburg, VA<br>
+      Teaching Assistant, ECE 5585 - Information Technology Security and Trust<br>
+      Tutored 4 undergraduate-level courses (Network Security and Statistics)</p>
     </div>
 
     <div class="entry">
-      <img src="/static/seagate.png" alt="Seagate" class="logo">
-      <h2>Intern (Automation & Customization of Product Specs)</h2>
-      <p><strong>Seagate Technology</strong><br>05/2024 - 08/2024 | Longmont, CO</p>
-      <ul>
-        <li>Improved customer satisfaction by 25% through customized product specifications</li>
-        <li>Integrated enhanced security protocols in the process for automation</li>
-        <li>Enhanced data processing efficiency by 20% through advanced data analysis and manipulation techniques</li>
-        <li>Scrum Master</li>
-        <li>Platform: Python, C, YAML</li>
-      </ul>
+      <p><img src="/static/seagate.png"><strong>Intern (Automation & Customization of Product Specs)</strong><br>
+      Seagate Technology<br>
+      05/2024 - 08/2024 Longmont, CO<br>
+      Improved customer satisfaction by 25% through customized product specifications<br>
+      Integrated enhanced security protocols in the process for automation<br>
+      Enhanced data processing efficiency by 20% through advanced data analysis and manipulation techniques<br>
+      Scrum Master<br>
+      Platform: Python, C, YAML</p>
     </div>
 
     <div class="entry">
-      <img src="/static/Cyentia.jpeg" alt="Cyentia" class="logo">
-      <h2>Intern (Cybersecurity Data Scraping & Process Automation)</h2>
-      <p><strong>Cyentia Institute</strong><br>11/2023 - 05/2024 | Blacksburg, VA</p>
-      <ul>
-        <li>Conducted data scraping from 50+ cybersecurity websites</li>
-        <li>Processed data into a research database for ransomware trends and patterns</li>
-        <li>Data Analysis, Prompt Engineering, HTML Scraping</li>
-        <li>Platform: Python, HTML</li>
-      </ul>
+      <p><img src="/static/Cyentia.jpeg"><strong>Intern (Cybersecurity Data Scraping & Process Automation)</strong><br>
+      Cyentia Institute<br>
+      11/2023 - 05/2024 Blacksburg, VA<br>
+      Conducted data scraping from 50+ cybersecurity websites to compile and analyze ransomware-related data<br>
+      Processed and analyzed the scraped data to create a research database<br>
+      Platform: Python, HTML</p>
     </div>
 
     <div class="entry">
-      <img src="/static/amd.png" alt="AMD" class="logo">
-      <h2>Project Intern (ML and Data Analytics)</h2>
-      <p><strong>AMD</strong><br>01/2023 - 07/2023 | Hyderabad, India</p>
-      <ul>
-        <li>Data Collection, Automation, Visualization</li>
-        <li>Built dashboard comparing Quartus (Intel) and Vivado (AMD)</li>
-        <li>Platform: Python, HTML, Java, Perl, AI-ML Toolkits, JSON</li>
-      </ul>
+      <p><img src="/static/amd.png"><strong>Project Intern (ML and Data Analytics)</strong><br>
+      AMD<br>
+      01/2023 - 07/2023 Hyderabad, India<br>
+      Data Collection/Analytics, Automation, Visualization<br>
+      Built dashboard comparing Quartus (Intel) and Vivado (AMD) tools<br>
+      Platform: Python, Java, Perl, AI-ML Toolkits, JSON</p>
     </div>
 
     <div class="entry">
-      <img src="/static/Qualcomm.png" alt="Qualcomm" class="logo">
-      <h2>Summer Intern (Predictive analytics - bugs for SW products)</h2>
-      <p><strong>Qualcomm</strong><br>06/2022 - 08/2022 | Hyderabad, India</p>
-      <ul>
-        <li>Predictive Analysis & Modeling using AI ML Toolkits</li>
-        <li>Improved software quality through bug metrics prediction</li>
-      </ul>
+      <p><img src="/static/Qualcomm.png"><strong>Summer Intern (Predictive analytics - bugs for SW products)</strong><br>
+      Qualcomm<br>
+      06/2022 - 08/2022 Hyderabad, India<br>
+      AI ML Toolkits for Software Products<br>
+      Improved bug forecasting and quality metrics<br>
+      Platform: Python, ML</p>
     </div>
 
     <div class="entry">
-      <img src="/static/Qualcomm.png" alt="Qualcomm" class="logo">
-      <h2>Summer Intern (Optimization of 5G embedded software code)</h2>
-      <p><strong>Qualcomm</strong><br>05/2021 - 08/2021 | Hyderabad, India</p>
-      <ul>
-        <li>Code Security, Analysis & Debugging</li>
-        <li>Mitigated risks in embedded 5G systems</li>
-        <li>Platform: C, Python, SW Debug tools</li>
-      </ul>
+      <p><img src="/static/Qualcomm.png"><strong>Summer Intern (Optimization of 5G embedded software code)</strong><br>
+      Qualcomm<br>
+      05/2021 - 08/2021 Hyderabad, India<br>
+      Code Security, Technical Problem Solving<br>
+      Risk analysis and secure coding for 5G software<br>
+      Platform: C, Python</p>
     </div>
   </div>
 </body>
