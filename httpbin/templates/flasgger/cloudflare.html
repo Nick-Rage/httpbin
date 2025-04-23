@@ -11,21 +11,32 @@
       background-position: center;
       margin: 0;
       padding: 2rem;
+      color: #222;
       text-align: center;
     }
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
       background: white;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      text-align: left;
     }
     h1 {
-      text-align: center;
       color: #f38020;
       margin-bottom: 2rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .section a {
+      color: #f38020;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .section a:hover {
+      text-decoration: underline;
     }
     .back-logo {
       position: absolute;
@@ -35,57 +46,51 @@
     .back-logo img {
       height: 40px;
     }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .section h2 {
-      color: #f38020;
-      margin-top: 1.5rem;
-    }
-    a {
-      color: #2e5cc8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
   </style>
 </head>
 <body>
-  <a href="/" class="back-logo"><img src="/static/cloudflareicon.png" alt="Home"></a>
+  <a href="/" class="back-logo">
+    <img src="/static/cloudflareicon.png" alt="Home">
+  </a>
   <div class="container">
-    <h1>Cloudflare ASE Project Demo</h1>
+    <h1>Cloudflare Project Demo</h1>
 
     <div class="section">
-      <p>This page presents a step-by-step walkthrough of my Cloudflare ASE technical assignment. Click the links below to see each service in action.</p>
+      <h3>1. Render Server (Origin)</h3>
+      <p>I hosted an HTTP header reflection service using Render by deploying a fork of the HTTPBin project.</p>
+      <p><a href="https://dashboard.render.com/web/srv-cvoppli4d50c73bl3spg" target="_blank">View Render Dashboard</a></p>
     </div>
 
     <div class="section">
-      <h2>🔗 Key Components</h2>
-      <ul>
-        <li><a href="https://github.com/Nick-Rage/httpbin" target="_blank">GitHub Repository (httpbin fork)</a></li>
-        <li><a href="https://dashboard.render.com/web/srv-cvoppli4d50c73bl3spg" target="_blank">Render Deployment (Server)</a></li>
-        <li><a href="https://ap.www.namecheap.com/domains/domaincontrolpanel/racherla.info/domain" target="_blank">Namecheap (Domain Setup)</a></li>
-        <li><a href="https://dash.cloudflare.com/eeb84b8cbc8fdfe6135473f552b60f91/racherla.info/dns/records" target="_blank">Cloudflare DNS & WAF Dashboard</a></li>
-      </ul>
+      <h3>2. GitHub Repository</h3>
+      <p>The HTTPBin code was forked and modified to meet the assignment requirements.</p>
+      <p><a href="https://github.com/Nick-Rage/httpbin" target="_blank">View GitHub Repository</a></p>
     </div>
 
     <div class="section">
-      <h2>🌐 Live Demo</h2>
-      <ul>
-        <li><a href="https://racherla.info/headers" target="_blank">Visit racherla.info/headers</a> – See all request headers returned by the server</li>
-        <li><a href="https://racherla.info" target="_blank">Visit Homepage</a> – Homepage deployed via Cloudflare</li>
-      </ul>
+      <h3>3. Domain Setup via Namecheap</h3>
+      <p>I purchased the domain <strong>racherla.info</strong> and configured custom DNS settings to point to Cloudflare.</p>
+      <p><a href="https://ap.www.namecheap.com/domains/domaincontrolpanel/racherla.info/domain" target="_blank">Manage Domain (Namecheap)</a></p>
     </div>
 
     <div class="section">
-      <h2>📄 View the Full Assignment</h2>
-      <p><a href="https://github.com/Nick-Rage/httpbin/blob/master/Cloud%20Flare%20ASE%20Test.pdf" target="_blank">Cloud Flare ASE Test.pdf (View in GitHub)</a></p>
+      <h3>4. DNS Configuration on Cloudflare</h3>
+      <p>I added CNAME records in Cloudflare DNS to route traffic to the Render-hosted origin server securely via TLS 1.2+.</p>
+      <p><a href="https://dash.cloudflare.com/eeb84b8cbc8fdfe6135473f552b60f91/racherla.info/dns/records" target="_blank">View Cloudflare DNS Dashboard</a></p>
     </div>
+
+    <div class="section">
+      <h3>5. Live Endpoint</h3>
+      <p>The deployed app is reachable via the domain and returns all request headers.</p>
+      <p><a href="https://racherla.info/headers" target="_blank">Test Live Endpoint</a></p>
+    </div>
+
+    <div class="section">
+      <h3>6. Assignment PDF</h3>
+      <p>The assignment PDF has been uploaded to my GitHub repo and is available for review.</p>
+      <p><a href="https://github.com/Nick-Rage/httpbin/blob/main/Cloud%20Flare%20ASE%20Test.pdf" target="_blank">View Assignment PDF</a></p>
+    </div>
+
   </div>
 </body>
 </html>
