@@ -15,6 +15,7 @@
       background-position: center;
       background-attachment: fixed;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
@@ -23,66 +24,104 @@
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
+
     h1 {
       color: #f38020;
       margin-bottom: 2rem;
     }
+
     .entry {
       margin-bottom: 2rem;
       text-align: left;
     }
+
+    .entry strong {
+      color: #f38020;
+      font-size: 1.1rem;
+    }
+
+    .entry p {
+      margin: 0.5rem 0 0 0;
+      line-height: 1.5;
+    }
+
     .back-logo {
       position: absolute;
       top: 20px;
       left: 20px;
+      text-align: center;
+      text-decoration: none;
     }
+
     .back-logo img {
-      height: 40px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .back-logo span {
+      display: block;
+      font-size: 0.85rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .back-logo img {
+        height: 40px;
+      }
     }
   </style>
 </head>
 <body>
-  <a href="/" class="back-logo"><img src="/static/cloudflareicon.png" alt="Home"></a>
+  <a href="/" class="back-logo">
+    <img src="/static/cloudflareicon.png" alt="Back">
+    <span>Back</span>
+  </a>
+
   <div class="container">
     <h1>Projects</h1>
 
     <div class="entry">
-      <p><strong>Anomaly Detection in Network Traffic</strong><br>
-      • Designed a system to detect unusual network patterns and threats<br>
+      <strong>Anomaly Detection in Network Traffic</strong>
+      <p>• Designed a system to detect unusual network patterns and threats<br>
       • Used isolation forests and one-class SVMs for detection<br>
       • Integrated models to boost threat identification accuracy</p>
     </div>
 
     <div class="entry">
-      <p><strong>Network Overload Attack Prevention for IoT Devices</strong><br>
-      • Built defenses for IoT against DDoS and overload attacks<br>
+      <strong>Network Overload Attack Prevention for IoT Devices</strong>
+      <p>• Built defenses for IoT against DDoS and overload attacks<br>
       • Used real-time traffic analysis and rate-limiting<br>
       • Improved IoT security through early detection systems</p>
     </div>
 
     <div class="entry">
-      <p><strong>Phishing Email Detection System</strong><br>
-      • Created system to detect phishing emails<br>
+      <strong>Phishing Email Detection System</strong>
+      <p>• Created system to detect phishing emails<br>
       • Applied ML algorithms and built indicator databases<br>
       • Reduced phishing attacks by 30-40%</p>
     </div>
 
     <div class="entry">
-      <p><strong>Credit Risk Analysis</strong><br>
-      • Modeled loan default risk for lenders<br>
+      <strong>Credit Risk Analysis</strong>
+      <p>• Modeled loan default risk for lenders<br>
       • Used logistic regression, random forest, gradient boosting<br>
       • Helped in financial risk assessment</p>
     </div>
 
     <div class="entry">
-      <p><strong>Stock Forecasting</strong><br>
-      • Built forecasting models with LSTM, ARIMA, sentiment analysis<br>
+      <strong>Stock Forecasting</strong>
+      <p>• Built forecasting models with LSTM, ARIMA, sentiment analysis<br>
       • Factored in news and oil prices for predictions</p>
     </div>
 
     <div class="entry">
-      <p><strong>Customer Behavior Characteristics</strong><br>
-      • Segmented customers using K-means, hierarchical clustering, PCA<br>
+      <strong>Customer Behavior Characteristics</strong>
+      <p>• Segmented customers using K-means, hierarchical clustering, PCA<br>
       • Built personalized marketing profiles</p>
     </div>
   </div>
