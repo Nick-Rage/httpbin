@@ -254,6 +254,9 @@ def experience_page():
 def view_projects():
     return render_template("flasgger/projects.html")
 
+@app.route("/cloudflare")
+def cloudflare_page():
+    return render_template("flasgger/cloudflare.html")
 
 
 
