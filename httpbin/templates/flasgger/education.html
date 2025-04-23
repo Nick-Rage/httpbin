@@ -15,6 +15,7 @@
       background-position: center;
       background-attachment: fixed;
     }
+
     .container {
       max-width: 800px;
       margin: auto;
@@ -23,32 +24,58 @@
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
+
     h1 {
       color: #f38020;
       margin-bottom: 2rem;
     }
+
     .entry {
       margin-bottom: 2rem;
       text-align: left;
     }
+
     .entry img {
       height: 30px;
       vertical-align: middle;
       margin-right: 10px;
     }
+
     .back-logo {
       position: absolute;
       top: 20px;
       left: 20px;
+      text-align: center;
+      text-decoration: none;
     }
+
     .back-logo img {
-      height: 40px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .back-logo span {
+      display: block;
+      font-size: 0.85rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .back-logo img {
+        height: 40px;
+      }
     }
   </style>
 </head>
 <body>
   <a href="/" class="back-logo">
-    <img src="/static/cloudflareicon.png" alt="Home">
+    <img src="/static/cloudflareicon.png" alt="Back">
+    <span>Back</span>
   </a>
 
   <div class="container">
