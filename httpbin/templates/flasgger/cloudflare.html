@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Cloudflare Project - Nikhil Racherla</title>
+  <meta charset="UTF-8">
+  <title>Cloudflare ASE Project Demo</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,86 +11,87 @@
       background-position: center;
       margin: 0;
       padding: 2rem;
-      color: #222;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
       background: white;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
     h1 {
+      text-align: center;
       color: #f38020;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
-    .section {
-      margin-bottom: 2rem;
-      text-align: left;
-    }
-    .section a {
+    h2 {
       color: #f38020;
-      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: #2e5cc8;
       text-decoration: none;
+      font-weight: 600;
     }
-    .section a:hover {
+    a:hover {
       text-decoration: underline;
     }
-    .back-logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
-    .back-logo img {
-      height: 40px;
+    .step {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-  <a href="/" class="back-logo">
-    <img src="/static/cloudflareicon.png" alt="Home">
-  </a>
   <div class="container">
-    <h1>Cloudflare Project Demo</h1>
+    <h1>Cloudflare ASE Project Demo</h1>
+    <p>This page presents a step-by-step walkthrough of my Cloudflare ASE technical assignment. Click the links below to see each part in action.</p>
 
-    <div class="section">
-      <h3>1. Render Server (Origin)</h3>
-      <p>I hosted an HTTP header reflection service using Render by deploying a fork of the HTTPBin project.</p>
-      <p><a href="https://dashboard.render.com/web/srv-cvoppli4d50c73bl3spg" target="_blank">View Render Dashboard</a></p>
+    <h2>1. Render Server (Origin)</h2>
+    <div class="step">
+      I hosted an HTTP header inspection server using Render, deploying a forked version of HTTPBin.<br>
+      <a href="https://dashboard.render.com/web/srv-cvoppli4d50c73bl3spg" target="_blank">View Render Dashboard</a>
     </div>
 
-    <div class="section">
-      <h3>2. GitHub Repository</h3>
-      <p>The HTTPBin code was forked and modified to meet the assignment requirements.</p>
-      <p><a href="https://github.com/Nick-Rage/httpbin" target="_blank">View GitHub Repository</a></p>
+    <h2>2. GitHub Repository</h2>
+    <div class="step">
+      Forked and modified the HTTPBin project code to meet assignment goals.<br>
+      <a href="https://github.com/Nick-Rage/httpbin" target="_blank">View GitHub Repository</a>
     </div>
 
-    <div class="section">
-      <h3>3. Domain Setup via Namecheap</h3>
-      <p>I purchased the domain <strong>racherla.info</strong> and configured custom DNS settings to point to Cloudflare.</p>
-      <p><a href="https://ap.www.namecheap.com/domains/domaincontrolpanel/racherla.info/domain" target="_blank">Manage Domain (Namecheap)</a></p>
+    <h2>3. Domain Setup via Namecheap</h2>
+    <div class="step">
+      Purchased the domain <strong>racherla.info</strong> and configured DNS to route to Cloudflare.<br>
+      <a href="https://ap.www.namecheap.com/domains/domaincontrolpanel/racherla.info/domain" target="_blank">Manage Domain (Namecheap)</a>
     </div>
 
-    <div class="section">
-      <h3>4. DNS Configuration on Cloudflare</h3>
-      <p>I added CNAME records in Cloudflare DNS to route traffic to the Render-hosted origin server securely via TLS 1.2+.</p>
-      <p><a href="https://dash.cloudflare.com/eeb84b8cbc8fdfe6135473f552b60f91/racherla.info/dns/records" target="_blank">View Cloudflare DNS Dashboard</a></p>
+    <h2>4. DNS Configuration on Cloudflare</h2>
+    <div class="step">
+      Used Cloudflare to proxy traffic to my Render server and applied DNS + TLS 1.2+ + WAF rules.<br>
+      <a href="https://dash.cloudflare.com/eeb84b8cbc8fdfe6135473f552b60f91/racherla.info/dns/records" target="_blank">View Cloudflare DNS Dashboard</a>
     </div>
 
-    <div class="section">
-      <h3>5. Live Endpoint</h3>
-      <p>The deployed app is reachable via the domain and returns all request headers.</p>
-      <p><a href="https://racherla.info/headers" target="_blank">Test Live Endpoint</a></p>
+    <h2>5. Live Endpoint</h2>
+    <div class="step">
+      View real-time request headers from the deployed app.<br>
+      <a href="https://racherla.info/headers" target="_blank">Test Live Endpoint</a>
     </div>
 
-    <div class="section">
-      <h3>6. Assignment PDF</h3>
-      <p>The assignment PDF has been uploaded to my GitHub repo and is available for review.</p>
-      <p><a href="https://github.com/Nick-Rage/httpbin/blob/main/Cloud%20Flare%20ASE%20Test.pdf" target="_blank">View Assignment PDF</a></p>
+    <h2>6. Assignment PDF</h2>
+    <div class="step">
+      The full assignment brief has been uploaded to my GitHub repo.<br>
+      <a href="https://github.com/Nick-Rage/httpbin/blob/master/Cloud%20Flare%20ASE%20Test.pdf" target="_blank">View Assignment PDF in GitHub</a>
     </div>
 
+    <h2>7. Homepage</h2>
+    <div class="step">
+      Deployed the homepage via Cloudflare with styling, buttons, and contact info.<br>
+      <a href="https://racherla.info" target="_blank">Visit Homepage</a>
+    </div>
   </div>
 </body>
 </html>
