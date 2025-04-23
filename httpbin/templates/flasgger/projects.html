@@ -1,117 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects – Nikhil Racherla</title>
-  <link rel="stylesheet" href="/static/styles.css" />
+  <meta charset="UTF-8" />
+  <title>Projects - Nikhil Racherla</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
       padding: 2rem;
       text-align: center;
+      background-image: url('/static/cf.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
     }
-    .cloudflare-logo {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 50px;
-      cursor: pointer;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     h1 {
       color: #f38020;
-      margin-bottom: 1rem;
-    }
-    .project-container {
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: white;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      text-align: left;
-    }
-    .project {
       margin-bottom: 2rem;
     }
-    .project-title {
-      color: #f38020;
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 0.3rem;
+    .entry {
+      margin-bottom: 2rem;
+      text-align: left;
     }
-    ul {
-      padding-left: 1.5rem;
-      margin: 0;
+    .back-logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
-    li {
-      margin-bottom: 0.4rem;
+    .back-logo img {
+      height: 40px;
     }
   </style>
 </head>
 <body>
+  <a href="/" class="back-logo"><img src="/static/cloudflareicon.png" alt="Home"></a>
+  <div class="container">
+    <h1>Projects</h1>
 
-<a href="/">
-  <img src="/static/cloudflareicon.png" alt="Home" class="cloudflare-logo">
-</a>
+    <div class="entry">
+      <p><strong>Anomaly Detection in Network Traffic</strong><br>
+      • Designed a system to detect unusual network patterns and threats<br>
+      • Used isolation forests and one-class SVMs for detection<br>
+      • Integrated models to boost threat identification accuracy</p>
+    </div>
 
-<h1>Projects</h1>
+    <div class="entry">
+      <p><strong>Network Overload Attack Prevention for IoT Devices</strong><br>
+      • Built defenses for IoT against DDoS and overload attacks<br>
+      • Used real-time traffic analysis and rate-limiting<br>
+      • Improved IoT security through early detection systems</p>
+    </div>
 
-<div class="project-container">
+    <div class="entry">
+      <p><strong>Phishing Email Detection System</strong><br>
+      • Created system to detect phishing emails<br>
+      • Applied ML algorithms and built indicator databases<br>
+      • Reduced phishing attacks by 30-40%</p>
+    </div>
 
-  <div class="project">
-    <div class="project-title">Anomaly Detection in Network Traffic</div>
-    <ul>
-      <li>Designed a system to detect unusual patterns in network traffic</li>
-      <li>Used isolation forests and one-class SVM for detection</li>
-      <li>Integrated statistical and ML models to improve detection accuracy</li>
-    </ul>
+    <div class="entry">
+      <p><strong>Credit Risk Analysis</strong><br>
+      • Modeled loan default risk for lenders<br>
+      • Used logistic regression, random forest, gradient boosting<br>
+      • Helped in financial risk assessment</p>
+    </div>
+
+    <div class="entry">
+      <p><strong>Stock Forecasting</strong><br>
+      • Built forecasting models with LSTM, ARIMA, sentiment analysis<br>
+      • Factored in news and oil prices for predictions</p>
+    </div>
+
+    <div class="entry">
+      <p><strong>Customer Behavior Characteristics</strong><br>
+      • Segmented customers using K-means, hierarchical clustering, PCA<br>
+      • Built personalized marketing profiles</p>
+    </div>
   </div>
-
-  <div class="project">
-    <div class="project-title">Network Overload Attack Prevention for IoT Devices</div>
-    <ul>
-      <li>Built defenses against DDoS and overload attacks in IoT</li>
-      <li>Used real-time traffic analysis and rate-limiting to improve efficiency</li>
-      <li>Added early detection systems to prevent attacks</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Phishing Email Detection System</div>
-    <ul>
-      <li>Built a phishing detection tool using machine learning</li>
-      <li>Enhanced email security and reduced phishing by 30%</li>
-      <li>Used a comprehensive phishing indicator database</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Credit Risk Analysis</div>
-    <ul>
-      <li>Developed models to predict the likelihood of loan default</li>
-      <li>Used logistic regression, random forest, and gradient boosting</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Stock Forecasting</div>
-    <ul>
-      <li>Forecasted stock prices using historical and economic indicators</li>
-      <li>Used ARIMA, LSTM, and sentiment analysis</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Customer Behavior Characteristics</div>
-    <ul>
-      <li>Segmented customers by behavior for personalized marketing</li>
-      <li>Used K-means, hierarchical clustering, and PCA</li>
-    </ul>
-  </div>
-
-</div>
-
 </body>
 </html>
