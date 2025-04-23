@@ -11,85 +11,115 @@
       background-position: center;
       margin: 0;
       padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
     }
+
+    .back-logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .back-logo img {
+      height: 40px;
+    }
+
     .container {
       background: white;
-      padding: 2rem;
+      padding: 2rem 2.5rem;
       border-radius: 12px;
-      max-width: 700px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      max-width: 750px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
     }
+
     h1 {
       text-align: center;
       color: #f38020;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
+
     h2 {
       color: #f38020;
-      font-size: 1.2rem;
-      margin-top: 2rem;
+      font-size: 1.15rem;
+      margin-top: 1.5rem;
     }
-    a {
+
+    .step {
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+    }
+
+    .step a {
       color: #2e5cc8;
       text-decoration: none;
       font-weight: 600;
     }
-    a:hover {
+
+    .step a:hover {
       text-decoration: underline;
     }
-    .step {
-      margin-bottom: 1rem;
+
+    .icon {
+      font-size: 1.1rem;
+      margin-right: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
+  <a href="/" class="back-logo">
+    <img src="/static/cloudflareicon.png" alt="Home">
+  </a>
+
   <div class="container">
     <h1>Cloudflare ASE Project Demo</h1>
     <p>This page presents a step-by-step walkthrough of my Cloudflare ASE technical assignment. Click the links below to see each part in action.</p>
 
-    <h2>1. Render Server (Origin)</h2>
+    <h2><span class="icon">🖥️</span>1. Render Server (Origin)</h2>
     <div class="step">
-      I hosted an HTTP header inspection server using Render, deploying a forked version of HTTPBin.<br>
+      Hosted an HTTP header service using Render, deploying a fork of HTTPBin.<br>
       <a href="https://dashboard.render.com/web/srv-cvoppli4d50c73bl3spg" target="_blank">View Render Dashboard</a>
     </div>
 
-    <h2>2. GitHub Repository</h2>
+    <h2><span class="icon">📁</span>2. GitHub Repository</h2>
     <div class="step">
-      Forked and modified the HTTPBin project code to meet assignment goals.<br>
+      Forked and customized the HTTPBin project to meet assignment goals.<br>
       <a href="https://github.com/Nick-Rage/httpbin" target="_blank">View GitHub Repository</a>
     </div>
 
-    <h2>3. Domain Setup via Namecheap</h2>
+    <h2><span class="icon">🌐</span>3. Domain Setup via Namecheap</h2>
     <div class="step">
-      Purchased the domain <strong>racherla.info</strong> and configured DNS to route to Cloudflare.<br>
+      Purchased the domain <strong>racherla.info</strong> and configured its DNS to route to Cloudflare.<br>
       <a href="https://ap.www.namecheap.com/domains/domaincontrolpanel/racherla.info/domain" target="_blank">Manage Domain (Namecheap)</a>
     </div>
 
-    <h2>4. DNS Configuration on Cloudflare</h2>
+    <h2><span class="icon">🛡️</span>4. DNS Configuration on Cloudflare</h2>
     <div class="step">
-      Used Cloudflare to proxy traffic to my Render server and applied DNS + TLS 1.2+ + WAF rules.<br>
+      Configured CNAME records and WAF rules on Cloudflare to route traffic securely via TLS 1.2+.<br>
       <a href="https://dash.cloudflare.com/eeb84b8cbc8fdfe6135473f552b60f91/racherla.info/dns/records" target="_blank">View Cloudflare DNS Dashboard</a>
     </div>
 
-    <h2>5. Live Endpoint</h2>
+    <h2><span class="icon">⚙️</span>5. Live Endpoint</h2>
     <div class="step">
-      View real-time request headers from the deployed app.<br>
+      The deployed app shows all incoming request headers in real time.<br>
       <a href="https://racherla.info/headers" target="_blank">Test Live Endpoint</a>
     </div>
 
-    <h2>6. Assignment PDF</h2>
+    <h2><span class="icon">📄</span>6. Assignment PDF</h2>
     <div class="step">
-      The full assignment brief has been uploaded to my GitHub repo.<br>
-      <a href="https://github.com/Nick-Rage/httpbin/blob/master/Cloud%20Flare%20ASE%20Test.pdf" target="_blank">View Assignment PDF in GitHub</a>
+      Uploaded to GitHub for transparency and access during interviews.<br>
+      <a href="https://github.com/Nick-Rage/httpbin/blob/master/Cloud%20Flare%20ASE%20Test.pdf" target="_blank">View Assignment PDF</a>
     </div>
 
-    <h2>7. Homepage</h2>
+    <h2><span class="icon">🏠</span>7. Homepage</h2>
     <div class="step">
-      Deployed the homepage via Cloudflare with styling, buttons, and contact info.<br>
+      Clean homepage deployed via Cloudflare with linked demo sections.<br>
       <a href="https://racherla.info" target="_blank">Visit Homepage</a>
     </div>
   </div>
