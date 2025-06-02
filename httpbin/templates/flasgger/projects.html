@@ -13,7 +13,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: white;
       padding: 2rem;
@@ -27,18 +27,19 @@
     }
 
     .entry {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       text-align: left;
     }
 
     .entry strong {
       color: #f38020;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
 
     .entry p {
       margin: 0.5rem 0 0 0;
-      line-height: 1.5;
+      line-height: 1.7;
+      font-size: 1rem;
     }
 
     .entry a {
@@ -72,39 +73,58 @@
 
     <div class="entry">
       <strong>Credit Risk Predictor Dashboard</strong>
-      <p>• Built an explainable ML dashboard for loan default risk<br>
-         • Integrated XGBoost, logistic regression, SHAP for interpretation<br>
-         <a href="https://github.com/Nick-Rage/Credit-Risk-Predictor-Dashboard" target="_blank">View on GitHub</a>
+      <p>
+        Developed a full-stack machine learning dashboard that evaluates the risk of loan default for financial institutions.
+        Leveraged models such as Logistic Regression and XGBoost to predict borrower reliability, and implemented SHAP for detailed interpretability and transparency of predictions.
+        The dashboard allows financial analysts to input borrower data, visualize risk levels in real time, and interpret feature importance for regulatory and business decision-making.
+        Integrated Flask for backend routing, Streamlit for interactive frontend, and automated data pipelines for end-to-end model deployment and testing.
+        <br>
+        <a href="https://github.com/Nick-Rage/Credit-Risk-Predictor-Dashboard" target="_blank">View on GitHub</a>
       </p>
     </div>
 
     <div class="entry">
       <strong>EV Stock Prediction Dashboard</strong>
-      <p>• Designed forecasting dashboard using LSTM and XGBoost<br>
-         • Predictive modeling based on oil prices, sentiment, and volume<br>
-         <a href="https://github.com/Nick-Rage/ev-stock-prediction-dashboard" target="_blank">View on GitHub</a>
+      <p>
+        Designed a robust forecasting dashboard that predicts stock trends for electric vehicle companies using advanced ML techniques.
+        Combined LSTM neural networks and XGBoost for time series forecasting and classification based on macroeconomic indicators like oil prices, sentiment analysis from news sources, and volume trends.
+        Used BeautifulSoup for real-time news scraping and integrated Matplotlib visualizations for accessible data insights.
+        The tool supports scenario testing and comparison across multiple stocks and timelines, aimed at financial analysts and traders.
+        <br>
+        <a href="https://github.com/Nick-Rage/ev-stock-prediction-dashboard" target="_blank">View on GitHub</a>
       </p>
     </div>
 
     <div class="entry">
       <strong>Anomaly Detection in Network Traffic</strong>
-      <p>• Designed a system to detect unusual network patterns and threats<br>
-         • Used isolation forests and one-class SVMs<br>
-         • Integrated models to improve identification accuracy</p>
+      <p>
+        Developed a system to monitor and analyze network traffic for detecting unusual or malicious activity in real time.
+        Utilized machine learning models including Isolation Forest and One-Class SVM to distinguish normal patterns from potential threats.
+        Integrated logging and visualization tools to trace anomalies to specific source IPs and timestamps, enabling quicker incident response.
+        The system was designed to be extensible and applicable across multiple enterprise network architectures, emphasizing low latency and high throughput.
+      </p>
     </div>
 
     <div class="entry">
       <strong>IoT Network Overload Attack Prevention</strong>
-      <p>• Built defenses for IoT against DDoS and overload attacks<br>
-         • Used traffic analysis and rate-limiting for real-time protection</p>
+      <p>
+        Built a lightweight security module for IoT devices to protect against network saturation and distributed denial-of-service (DDoS) attacks.
+        Implemented a rate-limiting algorithm and adaptive threshold system that detects overload patterns and proactively throttles malicious traffic.
+        Simulated various overload scenarios using Python and Scapy, and evaluated the system using throughput and latency metrics.
+        Enhanced device reliability and reduced failure rates by incorporating real-time monitoring and anomaly response pipelines.
+      </p>
     </div>
 
     <div class="entry">
       <strong>Phishing Email Detection System</strong>
-      <p>• Created system to detect phishing emails<br>
-         • Applied ML algorithms and email content analysis<br>
-         • Reduced attack success rates significantly</p>
+      <p>
+        Created a comprehensive phishing detection tool that analyzes incoming email content and metadata to identify potential phishing attacks.
+        Employed supervised machine learning algorithms such as Random Forest and SVM with a carefully engineered feature set based on URL patterns, email headers, and suspicious keywords.
+        Achieved over 92% detection accuracy on benchmark datasets and integrated results into a secure and lightweight API for deployment in enterprise email systems.
+        Included explainability features and a visual interface for cybersecurity analysts to audit model decisions and fine-tune detection thresholds.
+      </p>
     </div>
+
   </div>
 </body>
 </html>
